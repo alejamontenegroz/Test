@@ -1,0 +1,65 @@
+class Product {
+//Constructed the elements that can be input the class
+constructor (name, code, image_url, stock_quantity, price) {
+    this.name = name;
+    this.code = code;
+    this.image_url = image_url;
+    this.stock_quantity = stock_quantity;
+    this.price = price;
+    
+    }
+    
+    //This method helps set the name
+    setName(_name) {
+    this.name = _name;
+    }
+    
+     //This method returns the name
+    getName() {
+       return this.name;
+       
+    }
+     //This method set the code being entered
+    setCode(_code) {
+        this.code = _code;
+       
+    }
+    setImageURL(){
+    return this.image_url;
+    }
+     
+     //This method add the stock
+    addStock() {
+       return this.stockQuantity++;
+       
+    }
+    
+    //This method removes the stock
+    remmoveStok() {
+       return this.stockQuantity--;
+       
+    }
+    };
+    
+    class Furniture extends Poduct {
+       constructor (name, codr, inage_url, stock_quantity, price, category) {
+       super (name, codr, inage_url, stock_quantity, price);
+       this.category = category;
+    }
+    
+    setCategory (_category){
+       this.category = _category
+    }
+    
+    getCategory() {
+       return this.category;
+    }
+    
+  }
+    
+const Furniture1= new Furniture ("couch",6789, "https://i.pinimg.com/736x/c8/10/5b/c8105bb17da3305bcf845575db98af21.jpg", 500, 20, "Furniture", "11/08/2022");
+console.log (Furniture1);
+    
+    
+    
+    
